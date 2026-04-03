@@ -585,13 +585,16 @@ section {
 .visual-stack > img {
   display: block;
   width: 100%;
+  margin-top: 0;
+  border: 0;
+  border-radius: 0;
 }
 
 .visual-overlay {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: min(28%, 240px);
+  width: clamp(120px, 22vw, 240px);
   transform: translate(-50%, -50%);
   border: 0;
   margin-top: 0;
@@ -947,5 +950,9 @@ footer {
 
   .case-embed-figma {
     aspect-ratio: 3 / 4;
+  }
+
+  .visual-overlay {
+    width: clamp(96px, 34vw, 180px);
   }
 }
