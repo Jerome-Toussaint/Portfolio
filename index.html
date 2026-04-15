@@ -39,7 +39,7 @@
         <p class="hero-desc">Ik ben Jerôme Toussaint. Mijn stijl ligt tussen film, videografie, graphics production en digitale experiences: sterk in sfeer, clean in afwerking en altijd gericht op beeld dat blijft hangen.</p>
 
         <div class="hero-buttons">
-          <button class="cta-btn" id="explore-btn">Bekijk geselecteerd werk</button>
+          <button class="cta-btn" id="explore-btn">Bekijk alle projecten</button>
           <a href="#contact" class="cta-btn cta-btn-secondary">Plan een gesprek</a>
         </div>
 
@@ -53,7 +53,7 @@
 
       <div class="hero-visual">
         <div class="portrait-frame">
-          <img src="assets/zakelijk-web.jpg" alt="Jerome Toussaint">
+          <img src="assets/zakelijk-web.jpg" alt="Jerôme Toussaint">
         </div>
       </div>
     </div>
@@ -64,11 +64,19 @@
       <div class="section-header align-left">
         <span class="section-label">Selected work</span>
         <h2 class="section-title">Mijn eerdere projecten.</h2>
-        <p class="section-desc">De bovenste cases zijn het meest filmisch en visueel onderscheidend. Daaronder kun je extra projecten openen als archive.</p>
+        <p class="section-desc">Bekijk hier al mijn projecten en filter op het soort werk dat je wilt zien.</p>
+      </div>
+
+      <div class="portfolio-filters" aria-label="Projectfilters">
+        <button class="portfolio-filter is-active" type="button" data-filter="all">Alle projecten</button>
+        <button class="portfolio-filter" type="button" data-filter="visual">Visuele projecten</button>
+        <button class="portfolio-filter" type="button" data-filter="interactive">Interactieve projecten</button>
+        <button class="portfolio-filter" type="button" data-filter="web">Web & campagne</button>
+        <button class="portfolio-filter" type="button" data-filter="code">Code & workshops</button>
       </div>
 
       <div class="portfolio-grid">
-        <article class="portfolio-item" data-modal="modal-cbs">
+        <article class="portfolio-item" data-modal="modal-cbs" data-category="visual">
           <div class="portfolio-media">
             <img src="assets/thumbaibanen.png" alt="Thumbnail van Gaat AI banen overnemen">
           </div>
@@ -78,13 +86,13 @@
               <span>Editing</span>
               <span>Sound Design</span>
             </div>
-            <h3>Gaat AI banen overnemen?</h3>
+            <h3>Journalistieke Explainer & Sound Design</h3>
             <p>Voor CBS Nederland monteerde ik een video over de impact van AI op werk en maakte ik het achtergrond-sounddesign voor de bijbehorende interactieve site.</p>
             <button class="open-modal">Bekijk case</button>
           </div>
         </article>
 
-        <article class="portfolio-item" data-modal="modal-care">
+        <article class="portfolio-item" data-modal="modal-care" data-category="visual web">
           <div class="portfolio-media">
             <img src="assets/codezorgyhumbmail.png" alt="Thumbnail van Waarom code noodzakelijk is in de zorg">
           </div>
@@ -94,13 +102,13 @@
               <span>Zorg</span>
               <span>Design</span>
             </div>
-            <h3>Waarom code noodzakelijk is in de zorg</h3>
+            <h3>Instructievideo & Webdesign voor Zorg</h3>
             <p>Een instructieve video over de rol van code in de zorg, plus het webdesign dat ik maakte voor de bijbehorende Bit for Bit-site. Dezelfde lijn loopt door in Kunst met Code, waar code ook als praktisch en creatief medium wordt ingezet.</p>
             <button class="open-modal">Bekijk case</button>
           </div>
         </article>
 
-        <article class="portfolio-item" data-modal="modal-library">
+        <article class="portfolio-item" data-modal="modal-library" data-category="interactive">
           <div class="portfolio-media">
             <img src="assets/special-collections-thumb-final.png" alt="Thumbnail van Maastricht University Special Collections">
           </div>
@@ -109,13 +117,13 @@
               <span>Interactive</span>
               <span>Concept</span>
             </div>
-            <h3>Special Collections Explorer</h3>
+            <h3>Interactief Erfgoedconcept</h3>
             <p>Een interactieve ontdekkingservaring voor Maastricht University waarin oude boeken, verhalen en thema's spelenderwijs worden onthuld.</p>
             <button class="open-modal">Bekijk case</button>
           </div>
         </article>
 
-        <article class="portfolio-item" data-modal="modal4">
+        <article class="portfolio-item" data-modal="modal4" data-category="visual">
           <div class="portfolio-media">
             <img src="assets/blok3island.gif" alt="Live VJ performance">
           </div>
@@ -124,13 +132,13 @@
             <span>Live Visuals</span>
             <span>Performance</span>
           </div>
-          <h3>Live VJ Performance</h3>
+          <h3>Live VJ Visuals voor Concertperformance</h3>
           <p>Generatieve live visuals die ik maakte voor artist Gogo, ontworpen om de muziek realtime te versterken en het publiek mee te trekken in een audiovisuele ervaring.</p>
           <button class="open-modal">Bekijk case</button>
         </div>
         </article>
 
-        <article class="portfolio-item" data-modal="modal2">
+        <article class="portfolio-item" data-modal="modal2" data-category="web visual">
           <div class="portfolio-media">
             <img src="assets/keurkanjers.png" alt="Keurkanjers logo">
           </div>
@@ -140,13 +148,13 @@
             <span>Cross-media</span>
             <span>Web</span>
           </div>
-          <h3>Keurkanjers Campagne</h3>
+          <h3>Campagnewebsite & Front-end Development</h3>
           <p>Een cross-mediale campagne met een site die ik ontwikkelde, terwijl Kay het design maakte met navigatie naar Keurkanjers, Over ons en Keurmerken.</p>
           <button class="open-modal">Bekijk case</button>
         </div>
         </article>
 
-        <article class="portfolio-item portfolio-item-hidden" data-modal="modal1">
+        <article class="portfolio-item" data-modal="modal1" data-category="web visual code">
           <div class="portfolio-media">
             <img src="assets/blok1.png" alt="Online magazine">
           </div>
@@ -155,13 +163,13 @@
             <span>Editorial</span>
             <span>Design + Code</span>
           </div>
-          <h3>Online Magazine</h3>
+          <h3>Digitaal Magazine in HTML/CSS</h3>
           <p>Een digitaal magazine waarin content, layout en front-end samenkomen in een visueel redactionele stijl.</p>
           <button class="open-modal">Bekijk case</button>
         </div>
         </article>
 
-        <article class="portfolio-item portfolio-item-hidden" data-modal="modal3">
+        <article class="portfolio-item" data-modal="modal3" data-category="interactive code">
           <div class="portfolio-media">
             <img src="assets/blok2.Ggame.png" alt="Creative coding game">
           </div>
@@ -170,13 +178,13 @@
             <span>Interactive</span>
             <span>p5.js</span>
           </div>
-          <h3>Creative Coding Game</h3>
+          <h3>Creative Coding Game in p5.js</h3>
           <p>Een speelse interactieve ervaring waarin code, visuals en feedbackloops samen een eigen wereld bouwen.</p>
           <button class="open-modal">Bekijk case</button>
         </div>
         </article>
 
-        <article class="portfolio-item portfolio-item-hidden" data-modal="modal5">
+        <article class="portfolio-item" data-modal="modal5" data-category="code interactive">
           <div class="portfolio-media">
             <img src="assets/zorg-site-thumb.png" alt="Thumbnail van Kunst met Code">
           </div>
@@ -185,16 +193,13 @@
             <span>Workshop</span>
             <span>Education</span>
           </div>
-          <h3>Kunst met Code</h3>
+          <h3>Workshopconcept Creatief Programmeren</h3>
           <p>Een workshopconcept waarin code tastbaar en creatief wordt gemaakt, en dat inhoudelijk aansluit op Waarom code noodzakelijk is in de zorg.</p>
           <button class="open-modal">Bekijk case</button>
         </div>
         </article>
       </div>
 
-      <div class="portfolio-actions">
-        <button class="portfolio-toggle" id="portfolio-toggle" type="button">Toon archive projecten</button>
-      </div>
     </div>
   </section>
 
@@ -202,7 +207,7 @@
     <div class="modal-content">
       <button class="close-modal" type="button" aria-label="Sluit venster">&times;</button>
       <span class="modal-kicker">Video / Explainer</span>
-      <h2>CBS Nederland: Gaat AI banen overnemen?</h2>
+      <h2>Journalistieke Explainer & Sound Design</h2>
       <iframe
         class="case-embed"
         data-embed-src="https://www.youtube.com/embed/8lU22jASJZ4?autoplay=1&rel=0"
@@ -230,7 +235,7 @@
     <div class="modal-content">
       <button class="close-modal" type="button" aria-label="Sluit venster">&times;</button>
       <span class="modal-kicker">Interactive / Experience concept</span>
-      <h2>Maastricht University Special Collections</h2>
+      <h2>Interactief Erfgoedconcept</h2>
         <p><strong>Over de case</strong></p>
       <p>Dit concept draait om het toegankelijk maken van bijzondere collecties via een interactieve interface. Gebruikers tikken op boeken en ontdekken zo verhalen, thema's en historische context.</p>
       <iframe
@@ -252,7 +257,7 @@
     <div class="modal-content">
       <button class="close-modal" type="button" aria-label="Sluit venster">&times;</button>
       <span class="modal-kicker">Video / Instructie</span>
-      <h2>Waarom code noodzakelijk is in de zorg</h2>
+      <h2>Instructievideo & Webdesign voor Zorg</h2>
       <iframe
         class="case-embed"
         data-embed-src="https://www.youtube.com/embed/2TTMz1AO5W0?autoplay=1&rel=0"
@@ -280,7 +285,7 @@
     <div class="modal-content">
       <button class="close-modal" type="button" aria-label="Sluit venster">&times;</button>
       <span class="modal-kicker">Editorial / Front-end</span>
-      <h2>Online Magazine</h2>
+      <h2>Digitaal Magazine in HTML/CSS</h2>
       <img src="assets/blok1phone.png" alt="Mobiele weergave van het online magazine">
       <p><strong>Kennismaking met het vakgebied</strong></p>
       <p>Hier verkende ik hoe concept, fotografie, layout en code samen een sterk digitaal verhaal kunnen vormen.</p>
@@ -295,7 +300,7 @@
     <div class="modal-content">
       <button class="close-modal" type="button" aria-label="Sluit venster">&times;</button>
       <span class="modal-kicker">Campaign / Team project</span>
-      <h2>Keurkanjers Campagne</h2>
+      <h2>Campagnewebsite & Front-end Development</h2>
       <img src="assets/blok2homepage.png" alt="Homepage van de Keurkanjers-campagne">
       <p><strong>Over het project</strong></p>
       <p>Samen met Kay en Nils werkte ik aan een campagne rond keurmerken zoals Beter Leven, EKO, Fairtrade en MSC. De site die je hier ziet bouwde ik uit als digitaal startpunt van de ervaring.</p>
@@ -303,6 +308,22 @@
       <p>Het concept liep door in website, video, social content en fysieke uitingen zodat het verhaal op meerdere plekken consistent bleef. De homepage heeft een duidelijke header waarmee bezoekers direct naar Keurkanjers, Over ons en Keurmerken worden geleid.</p>
       <p><strong>Mijn rol</strong></p>
       <p>Ik ontwikkelde de site en vertaalde het concept naar een werkende webervaring. Kay maakte het design, inclusief de comic-achtige vakverdeling, de felle visuele stijl en de navigatie-opzet.</p>
+      <p><strong>Fysieke uitwerking</strong></p>
+      <p>Naast de site werkte het concept ook goed als tastbare campagne. Het uitlegboekje en het kaartdoosje geven de wereld van Keurkanjers meer karakter en maken het idee van leren via spelen meteen voelbaar.</p>
+      <div class="case-showcase case-showcase-keurkanjers">
+        <figure class="case-showcase-card case-showcase-card-hero">
+          <img src="assets/Doosje Mockup.png" alt="Mockup van het Keurkanjers kaartdoosje">
+          <figcaption>Het doosje vertaalt de campagne naar een fysiek object dat meteen als spelconcept leest.</figcaption>
+        </figure>
+        <figure class="case-showcase-card case-showcase-card-tilt">
+          <img src="assets/blok2keurkaart.png" alt="Uitlegkaart met keurmerken en voorbeeldproducten van Keurkanjers">
+          <figcaption>De uitlegkaart koppelt keurmerken direct aan herkenbare producten en maakt de informatie snel scanbaar.</figcaption>
+        </figure>
+        <figure class="case-showcase-card case-showcase-card-accent">
+          <img src="assets/blok2Dekanjerspage.png" alt="Characterpagina van de Keurkanjers-campagne">
+          <figcaption>De karakters geven de campagne een speelse identiteit die online en fysiek hetzelfde blijft aanvoelen.</figcaption>
+        </figure>
+      </div>
       <a href="https://jerome-toussaint.github.io/Keurkanjers/" target="_blank" rel="noreferrer" class="cta-btn">Bekijk de site</a>
       <img src="assets/blok2pagina.png" alt="Over ons-pagina van de Keurkanjers-campagne">
     </div>
@@ -312,7 +333,7 @@
     <div class="modal-content">
       <button class="close-modal" type="button" aria-label="Sluit venster">&times;</button>
       <span class="modal-kicker">Interactive / Creative coding</span>
-      <h2>Creative Coding Game</h2>
+      <h2>Creative Coding Game in p5.js</h2>
       <img src="assets/blok2.Ggame.png" alt="Screenshot van de creative coding game">
       <p><strong>Creative coding</strong></p>
       <p>In dit project combineerde ik JavaScript en p5.js om een game te maken waarin beeld, interactie en ritme centraal staan.</p>
@@ -327,7 +348,7 @@
     <div class="modal-content">
       <button class="close-modal" type="button" aria-label="Sluit venster">&times;</button>
       <span class="modal-kicker">Performance / Audiovisual</span>
-      <h2>Live VJ Performance</h2>
+      <h2>Live VJ Visuals voor Concertperformance</h2>
       <img src="assets/blok3island.gif" alt="Live visuals tijdens performance">
       <p><strong>Audiovisuele ervaring</strong></p>
       <p>Voor artist Gogo maakte ik live visuals die niet alleen als decor werken, maar als actief onderdeel van de performance. Tijdens concerten en festivals versterken dit soort beelden de muziek en trekken ze het publiek mee in een gezamenlijke audiovisuele ervaring.</p>
@@ -335,8 +356,7 @@
       <p>Als VJ ontwierp ik generatieve visuals die reageerden op live muziek. Met TouchDesigner en p5.js bouwde ik een systeem van bewegend beeld dat de set van Gogo aanvulde, emoties versterkte en de performance visueel liet leven in realtime.</p>
       <a href="https://open.spotify.com/track/7h5GTPKhHjBDLkfJfSbv8G" target="_blank" rel="noreferrer" class="cta-btn">Luister naar Gogo</a>
       <div class="visual-stack" aria-label="Tweede visual uit de performance">
-        <img src="assets/blok3space-original.gif" alt="Sterrenruimte visual">
-        <img src="assets/earth-transparent.png" alt="Aarde overlay" class="visual-overlay">
+        <img src="assets/blok3space.gif" alt="Sterrenruimte visual">
       </div>
     </div>
   </div>
@@ -345,7 +365,7 @@
     <div class="modal-content">
       <button class="close-modal" type="button" aria-label="Sluit venster">&times;</button>
       <span class="modal-kicker">Workshop / Creative tech</span>
-      <h2>Kunst met Code</h2>
+      <h2>Workshopconcept Creatief Programmeren</h2>
       <img src="assets/blok4certi.png" alt="Certificaat van de workshop">
       <p><strong>Workshop voor scholieren</strong></p>
       <p>Samen met mijn team ontwikkelde ik een workshop die laat zien dat code niet alleen technisch is, maar ook een creatief gereedschap kan zijn.</p>
@@ -384,9 +404,11 @@
               <span>Photoshop</span>
               <span>Adobe Creative Cloud</span>
               <span>Premiere Pro</span>
+              <span>Visual Studio Code</span>
+              <span>Processing</span>
               <span>Unreal Engine</span>
             </div>
-            <p class="skill-copy">Ik werk veel in Figma, Photoshop en Adobe Creative Cloud in het algemeen, met Premiere Pro als vaste tool voor editing. In Unreal Engine focus ik me vooral op virtual production en het bouwen van filmische digitale werelden.</p>
+            <p class="skill-copy">Ik werk veel in Figma, Photoshop, Adobe Creative Cloud, Premiere Pro, Visual Studio Code en Processing. Code is voor mij vooral een ondersteunende skill binnen visuele en interactieve projecten: sterk genoeg om ideeën technisch te realiseren, maar mijn grootste kracht ligt in concept, beeld, montage en de filmische afwerking. In Unreal Engine focus ik me vooral op virtual production en het bouwen van digitale werelden met een cinematografische sfeer.</p>
           </div>
         </div>
 
